@@ -1,0 +1,64 @@
+/*#pr a {
+ display: grid;
+ width: 80px;
+ color: aliceblue;
+ background: #333;
+ transition: 0.5;
+ text-decoration: none;
+ margin-top: 10px;
+ text-align: center;
+ border-radius: 20px;
+}
+
+#pr a:hover {
+ display: grid;
+ color: #333;   
+ background: #ff6;
+}
+
+#btn1 {
+ display: grid;
+ grid-area: 1 / 2 / 3;   
+}*/
+
+#header2 {
+ position: absolute;
+ top: 20px;
+ left: 20px;
+ 
+ width: 100px;
+ height: 100px;
+ border: 1px solid red;
+}
+
+#Elemt {
+ width: 200px;
+ height: 200px;
+ margin-top: 100px;
+ border: 0px solid black;   
+}
+
+td {
+ height: 50px;
+ width: 50px;
+ cursor: pointer;
+ text-align: center;
+ border: 1px solid black;   
+}
+
+#pcit {
+  width: 140px;
+  height: 100px;
+  position: absolute;
+  margin-top: 50px;
+  cursor: pointer;
+  background-color: black;  
+}
+
+#bil {
+ margin-top: 5px;
+}
+
+
+
+ 
