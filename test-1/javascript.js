@@ -140,13 +140,13 @@ function clickOneClic() {
   
   if(bil.display == "none") {
       bil.display = "none";
-      bil.innerHTML = "Изменениний Цвет Красный";
+      bil.innerHTML = "Изменениний Цвет Кнопки Красный";
       bil.style.background = "red";
       bil.style.color = "black"; 
       bil.display = "inline";
     } else {  
       bil.display = "inline";
-      bil.innerHTML = "Изменениний Цвет Синий";
+      bil.innerHTML = "Изменениний Цвет Кнопки Синий";
       bil.style.background = "blue";
       bil.style.color = "#fff";
       bil.display = "none";
