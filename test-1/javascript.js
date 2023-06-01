@@ -69,8 +69,8 @@ function onClickButton() {
               elem.style.backgroundColor = "black";
           } else {
             if(seltheme == "Antiquewhite") {
-              elem.style.color = "antiquewhite";
-              elem.style.background = "antiquewhite";
+              elem.style.color = "#fff";
+              elem.style.background = "#fff";
           } else {
             if(seltheme == "Black") {
               elem.style.color = "black"; 
@@ -105,7 +105,7 @@ function onClickAB2() {
 
   if(pcit.display == "none") {
     pcit.display = "none";
-    pcit.style.color = "antiquewhite"; 
+    pcit.style.color = "#fff"; 
   } else {
     pcit.display = "inline";
     pcit.style.color = "black";
@@ -113,7 +113,7 @@ function onClickAB2() {
 
   if(pcit.display == "none") {
     pcit.display = "inline";
-    pcit.style.color = "antiquewhite"; 
+    pcit.style.color = "#fff"; 
   } else {
     pcit.display = "none";
     pcit.style.color = "black";
