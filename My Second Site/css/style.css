@@ -3,9 +3,9 @@
     grid-gap: 5px;
     grid-template-rows: 90px 650px 90px;
     grid-template-areas: 
-        ". s s h h h h h ."
-        ". s s c c c c c ."
-        ". f f f f f f f .";
+        ". s s h h h h . ."
+        ". s s c c c c . ."
+        ". f f f f f f . .";
 }
 /* Шапка сайта */
 #header {
@@ -239,7 +239,6 @@
     height: 50px;
     width: 50px;
 }
-
 #icoMainSidber img:hover {
     border: 3px solid #040404;
     -webkit-transform: scale(0.8);
@@ -479,7 +478,6 @@
 #contPodItem {
     display: grid;
     border-radius: 20px;
-    grid-gap: -3px;
     background: #17171f;
     border: 3px solid #335;
     grid-template-areas: 
@@ -521,7 +519,7 @@
     display: grid;
     position: absolute;
     border-radius: 10px;
-    margin-left: -97px;
+    margin-left: -41px;
     margin-top: 57px;
     height: 200px;
     width: 200px;
