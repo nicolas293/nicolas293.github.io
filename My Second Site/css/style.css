@@ -228,6 +228,17 @@
     -ms-transform: scale(0.8);
     transform: scale(0.8);
 }
+
+#icoMainSidber img {
+    display: grid;
+    cursor: pointer;
+    border: 3px solid #664;
+    border-radius: 100px;
+    margin-top: -22px;
+    margin-left: 5px;
+    height: 50px;
+    width: 50px;
+}
 /* Иконки сайта */
 
 #mainSidebar {
