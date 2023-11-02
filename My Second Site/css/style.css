@@ -34,8 +34,8 @@
     font-size: 14px;
     cursor: pointer;
     color: aliceblue;
-    margin-left: 14%;
-    margin-top: 4%;
+    margin-left: 15%;
+    margin-top: 5%;
 }
 #mainHeadGon h1:hover {
     opacity: 0.8;
@@ -412,6 +412,21 @@
     margin-top: 10px;
     margin-left: 13px;
 }
+#imgItem1M img:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8); 
+}
+#fileMain {
+    display: grid;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 3px solid #222;
+    color: aliceblue;
+    margin-left: 138px;
+    margin-top: -52px;
+}
 #item1:hover {
     background: #434;
     z-index: 2;
@@ -437,12 +452,46 @@
     -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
+/* Иконки sidebara */
+#itemImg img {
+    display: grid;
+    position: absolute;
+    border: 3px solid #222;
+    border-radius: 40px;
+    height: 70px;
+    width: 70px;
+}
+#itemImg img:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8); 
+}
+#itemImg1 img {
+    display: grid;
+    position: absolute;
+    height: 49px;
+    margin-left: 84px;
+    margin-top: -66px;
+}
+#itemImg1 img:hover {
+    height: 49px;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); 
+}
+/* Иконки sidebara */
+
 #imgItem2M {
     display: grid;
     position: absolute;
     margin-bottom: -41px;
     margin-left: 50px;
     margin-top: 9px;
+}
+#imgItem2M img:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8); 
 } 
 
 @media (max-width: 1124px) {
