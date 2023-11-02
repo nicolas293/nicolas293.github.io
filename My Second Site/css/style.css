@@ -460,8 +460,11 @@
 #contPodItem {
     display: grid;
     border-radius: 20px;
+    grid-gap: -3px;
     background: #17171f;
     border: 3px solid #335;
+    grid-template-areas: 
+        "contentImegMain contentImegMain1";
 }
 #contPodItem span {
     display: grid;
@@ -473,6 +476,43 @@
     background: #332;
     border-radius: 46px 28px 15px;
 }
+#contentImegMain {
+    display: grid;
+    grid-area: contentImegMain;
+}
+#contentImdegsMainCont img{
+    display: grid;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 56px;
+    margin-left: 11px;
+    height: 200px;
+    width: 200px;
+}
+#contentImdegsMainCont img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+#contentImegMain1 {
+    display: grid;
+    grid-area: contentImegMain1;
+}
+#contentImdegsMainCont1 img {
+    display: grid;
+    position: absolute;
+    border-radius: 10px;
+    margin-left: -97px;
+    margin-top: 57px;
+    height: 200px;
+    width: 200px;
+}
+#contentImdegsMainCont1 img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
 /* Иконки sidebara */
 #itemImg img {
     display: grid;
