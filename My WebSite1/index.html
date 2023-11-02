@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="icons/home.png" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐝 My WebSite 🐺</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="mainWrapper"></div>
+        <img id="imges" src="img/1.jpg">
+    <!-- Шапка сайта -->
+        <div id="header">
+            <h3>Retra</h3>
+            <div id="mainHeader">
+                <div id="iconsHeader" onclick="searchAll()">
+                    <img src="icons/search.svg" title="Поиск">
+                </div>
+                <div id="d2">
+                    <form>
+                        <input type="text" placeholder="Искать здесь...">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="imges1">
+                <img id="imger" src="icons/bell.svg" title="Увидомление">
+            </div>
+            <div id="imges2">
+                <img id="imger1" src="icons/vertical.png">
+            </div>
+
+        </div>
+    <!-- Шапка сайта -->
+    <!-- ---------------------------------------------- -->
+    <!-- Контент сайта -->
+        <div id="content">
+            <div id="appsCont">
+                <h5>Меню</h5>
+                <img id="appsMenu" src="icons/apps2.svg">
+            </div>
+            <div id="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#">Изоброжения</a>
+                        </li>
+                        <li>
+                            <a href="#">Видео</a>
+                        </li>
+                        <li>
+                            <a href="#">О нас</a>
+                        </li>
+                    </ul>
+            </div>
+            <div id="mainIcons">
+                <div id="mainMenu">
+                    <h3>Иконки</h3>
+                </div>
+                <div id="menuIcons">
+                        <img style="filter: invert(1);" src="icons/2.png" title="Дом">
+                    <div id="ico">
+                        <img src="icons/5.png" title="Контакты">
+                    </div>
+                    <div id="ico1">
+                        <img src="icons/3.png" title="Звонки">
+                    </div>
+                    <div id="ico2">
+                        <img src="icons/1.png" title="Сообщения">
+                    </div>
+                </div>
+
+            </div>
+            <div id="mainContent">
+                <div id="mainFooter">
+                    <h3 style="display: grid;
+                    justify-content: center;">Под-Меню</h3>
+
+                    <div id="mainIco">
+                        <img id="iconMain1" src="icons/picture.png" title="Фото">
+
+                        <div id="Ico">
+                            <img id="iconMain1" src="icons/camera.png" title="Камера">
+                        </div>
+                    </div>
+
+                    <div id="teLefon"></div>
+
+                </div>
+            </div>
+
+            <div id="wrapperContent">
+                <div id="itam">
+                        <img id="onOcnoClick" src="icons/apps1.svg" title="Зона Обмена">
+                    <div id="icon1">
+                        <img id="icor" src="icons/document.svg" title="Документы">
+                    </div>
+                    <div id="icon2">
+                        <img id="icor1" src="icons/shopping cart.svg" title="Продукты">
+                    </div>
+                    <div id="icon3">
+                        <img id="icor2" src="icons/users-alt.svg" title="Люди">
+                    </div>
+
+                    <div id="wrapperItam">
+                        <div id="wrapItam1">
+                           <a href="#" id="onclickBtn"><img id="wrapItam" src="icons/plus.svg" title="Добавить"></a>
+                        </div>
+                        <div id="wrapMinus1">
+                            <a href="#" onclick="clearOnclick()"><img id="wrapMinus" src="icons/minus.svg" title="Удалить"></a>
+                        </div>
+                        <div id="wrapDel1">
+                            <a href="#" onclick="wrapUpdate()"><img id="wrapDel" src="icons/update.ico" title="Обновить"></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="itam1">
+                        <div id="scroll">
+                           <a href="#" onclick="nScresr()"><img id="scroll-1" src="icons/plusScroll.svg"></a>
+                        </div>
+
+                        <div id="scrollR">
+                            <a href="#" onclick="nScresrR()"><img id="scroll-2" src="icons/minusScroll.svg"></a>
+                         </div>
+
+                       <div id="itamScroll"></div>
+
+                </div>
+
+                <div id="myModal" class="modal">
+
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Шапка модального окна</h2>
+                      </div>
+                      <div class="modal-body">
+                        <p>Добавить Изоброжения</p><br>
+                        <button onclick="btnOnclick()">Добавить</button>
+                        <button onclick="clearOnclick()">Удалить</button>
+                      </div>
+                      <div class="modal-footer">
+                        <img id="wrapDel2" src="icons/update.ico" onclick="wrapUpdate()">
+                        <h3>Футер модального окна</h3>
+                      </div>
+                    </div>
+
+                </div>
+
+                <div id="myModDocument" class="modalDocument">
+
+                    <div class="modalDocument-content">
+                      <div class="modalDocument-header">
+                        <span class="closeHeader-ur">&times;</span>
+                        <h2>Шапка модального окна</h2>
+                      </div>
+                      <div class="modalDocument-body">
+                        <button id="FontZise-Text" onclick="FontZise()">Увиличения Шрифта</button>
+
+                        <textarea rows="10" id="jaloDocument-text"></textarea>
+                      </div>
+                      <div class="modalDocument-footer">
+                        <h3>Футер модального окна</h3>
+                      </div>
+                    </div>
+
+                </div>
+
+                <div id="myModPeople" class="modalPeople">
+
+                    <div id="modalContent-people">
+                      <div class="modalHeader-people">
+                        <span class="closePeople-ur">&times;</span>
+                        <h2>Шапка модального окна</h2>
+                      </div>
+                      <div class="modalBody-people">
+                        <button id="People-Text" onclick="telefonText()">Добавить Телефон</button>
+                        <div id="teLefon" style="background: none;"></div>
+                      </div>
+                      <div class="modalFooter-people">
+                        <h3>Футер модального окна</h3>
+                      </div>
+                    </div>
+
+                </div>
+
+                
+                <div id="myModal-clok" class="modal-1">
+
+                    <div class="modal-content-2">
+                      <div class="modal-header-3">
+                        <span class="close-4">&times;</span>
+                        <h2>Добавить Изоброжения</h2>
+                      </div>
+                      <div class="modal-body-5">
+
+                        <button onclick="igesRemuve()">Удалить Изоброжения</button>
+
+                        <button onclick="igesClik()">Показать Изоброжения</button>
+                        <div id="futerImg"></div>
+
+                      </div>
+                      <div class="modal-footer-6">
+                        <h3>Добавить Изоброжения</h3>
+                      </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="Rmen-Imges">
+                <div id="tmainI">
+
+                </div>
+
+            </div>
+
+        </div>
+    <!-- Контент сайта -->
+
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
