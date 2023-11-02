@@ -1,7 +1,7 @@
 #wrapper {
     display: grid;
     grid-gap: 5px;
-    grid-template-rows: 90px 650px 90px;
+    grid-template-rows: 90px 650px 150px;
     grid-template-areas: 
         ". s s h h h h . ."
         ". s s c c c c . ."
@@ -84,9 +84,9 @@
     display: grid;
     background: #13121f;
 }
-#mainSidItemM1 img {
+/* #mainSidItemM1 img {
     border: 4px solid #444;
-}
+} */
 #mainSidItemM, span {
     display: grid;
     cursor: pointer;
@@ -105,6 +105,7 @@
     border-radius: 100px;
     height: 70px;
     width: 70px;
+    z-index: 1;
 }
 #iconSidItem1 p {
     display: grid;
@@ -115,6 +116,7 @@
     margin-top: 2%;
     margin-left: 4%;
     color: aliceblue;
+    z-index: 1;
 }
 #iconSidItem1 p:hover {
     background: rgb(7, 48, 138);
@@ -227,6 +229,13 @@
     -webkit-transform: scale(0.8);
     -ms-transform: scale(0.8);
     transform: scale(0.8);
+}
+#iconMainFeri, #iconFeriGif {
+    display: grid;
+    position: absolute;
+    height: 65px;
+    margin-left: 6px;
+    margin-top: 6px;
 }
 
 #icoMainSidber img {
@@ -557,6 +566,13 @@
     -ms-transform: scale(1.2);
     transform: scale(1.2); 
 }
+#gifMain, #fireMainGif {
+    display: grid;
+    position: absolute;
+    margin-left: 7px;
+    height: 29px;
+    margin-top: 64px;
+}
 /* Иконки sidebara */
 
 #imgItem2M {
@@ -565,6 +581,13 @@
     margin-bottom: -41px;
     margin-left: 50px;
     margin-top: 9px;
+}
+#fireGif1, #mainFeriGif {
+    display: grid;
+    position: absolute;
+    margin-left: 5px;
+    height: 30px;
+    margin-top: 64px;
 }
 #imgItem2M img:hover {
     -webkit-transform: scale(0.8);
