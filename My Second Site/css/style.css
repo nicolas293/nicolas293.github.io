@@ -239,6 +239,14 @@
     height: 50px;
     width: 50px;
 }
+
+#icoMainSidber img:hover {
+    border: 3px solid #040404;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
 /* Иконки сайта */
 
 #mainSidebar {
