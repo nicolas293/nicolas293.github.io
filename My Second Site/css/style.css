@@ -110,9 +110,17 @@
     display: grid;
     cursor: pointer;
     position: absolute;
+    background: #555;
+    border-radius: 5px;
     margin-top: 2%;
     margin-left: 4%;
     color: aliceblue;
+}
+#iconSidItem1 p:hover {
+    background: rgb(7, 48, 138);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 #iconSidItem1 img:hover {
     opacity: 0.7;
@@ -135,9 +143,17 @@
     display: grid;
     cursor: pointer;
     position: absolute;
+    background: #555;
+    border-radius: 5px;
     margin-top: -6%;
     margin-left: 4%;
     color: aliceblue;
+}
+#iconSidItem2 p:hover {
+    background: rgb(7, 48, 138);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 #iconSidItem2 img:hover {
     opacity: 0.7;
@@ -160,9 +176,17 @@
     display: grid;
     cursor: pointer;
     position: absolute;
+    background: #555;
+    border-radius: 5px;
     margin-top: -14%;
     margin-left: 4%;
     color: aliceblue;
+}
+#iconSidItem3 p:hover {
+    background: rgb(7, 48, 138);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 #iconSidItem3 img:hover {
     opacity: 0.7;
@@ -185,9 +209,17 @@
     display: grid;
     cursor: pointer;
     position: absolute;
+    background: #555;
+    border-radius: 5px;
     margin-top: -22%;
     margin-left: 4%;
     color: aliceblue;
+}
+#iconSidItem4 p:hover {
+    background: rgb(7, 48, 138);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 #iconSidItem4 img:hover {
     opacity: 0.7;
@@ -231,6 +263,12 @@
     text-align: center;
     text-decoration: none;
     align-content: center;
+}
+#itemMenu a:hover {
+    border: 3px solid #555;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
 }
 
 /* Иконки Меню */
@@ -311,6 +349,7 @@
     display: grid;
     text-decoration: none;
 }
+
 /* Меню сайта */
 
 /* Под Меню */
@@ -359,7 +398,7 @@
     display: grid;
     grid-area: mainItem1;
 }
-.item1 {
+#item1 {
     display: grid;
     border: 3px solid #222;
     grid-row: 2 / 12;
@@ -398,6 +437,13 @@
     -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
+#imgItem2M {
+    display: grid;
+    position: absolute;
+    margin-bottom: -41px;
+    margin-left: 50px;
+    margin-top: 9px;
+} 
 
 @media (max-width: 1124px) {
 
