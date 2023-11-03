@@ -249,9 +249,9 @@
 #iconMainFeri2, #iconFeriGif2 {
     display: grid;
     position: absolute;
-    margin-left: 0px;
-    margin-top: 0px;
-    height: 0px;
+    margin-left: 8px;
+    margin-top: 83px;
+    height: 68px;
 }
 
 #icoMainSidber img {
