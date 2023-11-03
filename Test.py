@@ -1,6 +1,13 @@
-import keyboard
-import pygame
-import pygame.mixer as mixer
+import turtle
 
-mixer.init()
-song = mixer.Sound(<path_to_song>)
+win = turtle.Turtle()
+win.hideturtle()
+win.speed(0)
+
+for i in range(4):
+    win.forward(100)
+    win.left(90)
+
+turtle.mainloop()
+
+

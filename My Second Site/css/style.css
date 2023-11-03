@@ -140,6 +140,7 @@
     border-radius: 100px;
     height: 70px;
     width: 70px;
+    z-index: 1;
 }
 #iconSidItem2 p {
     display: grid;
@@ -150,6 +151,7 @@
     margin-top: -6%;
     margin-left: 4%;
     color: aliceblue;
+    z-index: 1;
 }
 #iconSidItem2 p:hover {
     background: rgb(7, 48, 138);
@@ -233,9 +235,23 @@
 #iconMainFeri, #iconFeriGif {
     display: grid;
     position: absolute;
-    height: 65px;
+    height: 72px;
     margin-left: 6px;
     margin-top: 6px;
+}
+#iconMainFeri1, #iconFeriGif1 {
+    display: grid;
+    position: absolute;
+    height: 72px;
+    margin-left: 6px;
+    margin-top: 44px;
+} 
+#iconMainFeri2, #iconFeriGif2 {
+    display: grid;
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 0px;
+    height: 0px;
 }
 
 #icoMainSidber img {
@@ -417,7 +433,7 @@
 #mainItemMaster {
     display: grid;
     grid-gap: 5px;
-    grid-template-rows: 183px 380px;
+    grid-template-rows: 183px 399px;
     grid-template-areas: 
         "mainItem1 mainItem2"
         "mainPodItem mainPodItem";
@@ -490,7 +506,8 @@
     background: #17171f;
     border: 3px solid #335;
     grid-template-areas: 
-        "contentImegMain contentImegMain1";
+        "contentImegMain contentImegMain1"
+        "contentImegMain2 contentImegMain3";
 }
 #contPodItem span {
     display: grid;
@@ -537,6 +554,32 @@
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
+}
+#contentImegMain2 {
+    display: grid;
+    grid-area: contentImegMain2;
+}
+#contentImdegsMainCont2 img {
+    display: grid;
+    position: absolute;
+    border-radius: 10px;
+    margin-left: 7px;
+    margin-top: 61px;
+    height: 135px;
+    width: 211px;
+}
+#contentImegMain3 {
+    display: grid;
+    grid-area: contentImegMain3;
+}
+#contentImdegsMainCont3 img {
+    display: grid;
+    position: absolute;
+    border-radius: 10px;
+    margin-left: -41px;
+    margin-top: 61px;
+    height: 134px;
+    width: 200px;
 }
 
 /* Иконки sidebara */
@@ -629,3 +672,13 @@
     border-radius: 20px;
     background: #1f1b1b;
 }
+
+#gifSuperGeroj, #gifMainTerra {
+    display: grid;
+    position: absolute;
+    height: 170px;
+    margin-left: 532px;
+    margin-top: 367px;
+    z-index: -1;
+}
+
