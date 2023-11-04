@@ -271,6 +271,12 @@
     transform: scale(0.8);
 }
 
+#podMenu, #imgPodMenu{
+    display: grid;
+    position: absolute;  
+}
+
+
 /* Иконки сайта */
 
 #mainSidebar {
