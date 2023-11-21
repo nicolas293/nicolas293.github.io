@@ -230,7 +230,7 @@ def myTeme():
     tqme = tk.Toplevel()
     tqme.title('Цифровые Часы')
 
-    lable = Label(time, font=('aerial', 30), background='black', foreground='white')
+    lable = Label(tqme, font=('aerial', 30), background='black', foreground='white')
 
     def time():
         string = strftime('%H:%M:%S %p')
