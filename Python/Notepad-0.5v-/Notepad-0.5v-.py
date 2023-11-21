@@ -4,6 +4,7 @@ from tkinter import filedialog as fd
 from tkinter import colorchooser as ch
 from tkinter import colorchooser
 from  time import  strftime
+from tkcalendar import Calendar
 from tkinter import *
 
 
@@ -241,8 +242,29 @@ def myTeme():
     time()
 
     tqme.mainloop()
-
 # Часы
+
+# календарь
+
+def mycal():
+    cali = tk.Toplevel()
+    cali.geometry('400x400')
+
+    cal = Calendar(cali, selectmode = 'day', year = 2020, month = 5, day = 22)
+    cal.pack(pady = 20)
+
+    def grad_date():
+        date.config(text = "Selected Date is: " + cal.get_date())
+
+    Button(cali, text = "Get Date",
+       command = grad_date).pack(pady = 20)
+ 
+    date = Label(cali, text = "")
+    date.pack(pady = 20)
+
+    cali.mainloop()
+
+# календарь
 
 
 win.bind("<Button-3>", my_popup)
