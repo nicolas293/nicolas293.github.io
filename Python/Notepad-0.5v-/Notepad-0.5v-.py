@@ -248,6 +248,7 @@ def myTeme():
 
 def mycal():
     cali = tk.Toplevel()
+    cali.title('Календарь')
     cali.geometry('400x400')
 
     cal = Calendar(cali, selectmode = 'day', year = 2020, month = 5, day = 22)
