@@ -3,7 +3,7 @@ from tkinter.scrolledtext import ScrolledText
 from tkinter import filedialog as fd
 from tkinter import colorchooser as ch
 from tkinter import colorchooser
-from  time import  strftime
+from time import  strftime
 from tkcalendar import Calendar
 from tkinter import *
 
@@ -32,8 +32,13 @@ def colorPicerFons():
 def my_popup(e): 
    my_menu.tk_popup(e.x_root, e.y_root)
 
+def on_click(event):
+    print("Клик")
+
 def Quit():
     quit()
+
+win.bind("<Button-1>", on_click)
 
 # Первой Size-текст
 def new_window1():
@@ -206,7 +211,7 @@ def newInfa():
     gut.mainloop()   
 # Информация
 
-# Информация
+# Помощь
 def newPomaq():
 
     gut = tk.Toplevel(win)
@@ -223,7 +228,7 @@ def newPomaq():
     link_label.bind("<Button-1>", lambda e: open_link())
 
     gut.mainloop()   
-# Информация
+# Помощь
 
 # Часы
 def myTeme():
@@ -266,6 +271,10 @@ def mycal():
     cali.mainloop()
 # календарь
 
+# статусбар
+# def myStatys():
+
+# статусбар
 
 win.bind("<Button-3>", my_popup)
 
