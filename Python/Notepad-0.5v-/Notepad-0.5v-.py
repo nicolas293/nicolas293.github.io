@@ -10,7 +10,7 @@ from tkinter import *
 
 win = Tk()
 win.geometry('560x450')
-win.title('Notepad_0.5v')
+win.title('Notepad_0.6v')
 
 def OpenFile():
     fd.askopenfilename()
