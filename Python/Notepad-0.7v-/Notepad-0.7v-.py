@@ -10,7 +10,7 @@ from tkinter import *
 
 win = Tk()
 win.geometry('560x450')
-win.title('Notepad_0.6v')
+win.title('Notepad_0.7v')
 
 def OpenFile():
     fd.askopenfilename()
@@ -34,6 +34,11 @@ def my_popup(e):
 
 def on_click(event):
     print("Клик")
+
+def update_label():
+    row, col = text.index('insert').split('.')
+    label.config(text=f'{row}:{col}')
+    win.after(100, update_label)
 
 def Quit():
     quit()
@@ -215,7 +220,7 @@ def newInfa():
 def newPomaq():
 
     gut = tk.Toplevel(win)
-    gut.title('Информация')
+    gut.title('Помощь')
     gut.geometry('250x200')
 
     def open_link():
@@ -326,7 +331,12 @@ menu.add_cascade(label='Edit', menu=edit)
 menu.add_cascade(label='Version', menu=editVersions)
 win.config(menu=menu)
 
+label = Label(win, anchor='e')
+label.pack(fill='x', side="bottom")
+
 text = ScrolledText(win, height=450, width=350)
-text.pack(side="right")
+text.pack(side="right", fill="both", expand=True)
+
+update_label()
 
 win.mainloop()
