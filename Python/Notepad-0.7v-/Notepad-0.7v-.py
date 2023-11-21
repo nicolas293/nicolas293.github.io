@@ -210,7 +210,7 @@ def newInfa():
     gut.title('Информация')
     gut.geometry('250x200')
 
-    greeting = tk.Label(gut, text="Notepad_0.5v", width=25, height=5)
+    greeting = tk.Label(gut, text="Notepad_0.7v", width=25, height=5)
     greeting.pack()
 
     gut.mainloop()   
