@@ -255,7 +255,6 @@ def myTeme():
 # Часы
 
 # календарь
-
 def mycal():
     cali = tk.Toplevel()
     cali.title('Календарь')
@@ -305,9 +304,6 @@ edit.add_command(label='Color-фон', command=colorPicerFons)
 edit.add_separator()
 edit.add_command(label='Clear', command=my_clear)
 edit.add_separator()
-edit.add_command(label='Цыфровый часы', command=myTeme)
-edit.add_command(label='Календарь', command=mycal)
-edit.add_separator()
 edit.add_command(label='Canvas-Рисовалка', command=new_window)
 edit.add_command(label='Font', command=new_window1)
 edit.add_separator()
@@ -318,6 +314,9 @@ edit.add_command(label='Счётчик слов', command=my_counter)
 file = Menu(win, tearoff=0)
 file.add_command(label='Open File', command=OpenFile)
 file.add_command(label='Save File', command=SaveFile)
+file.add_separator()
+file.add_command(label='Цыфровый часы', command=myTeme)
+file.add_command(label='Календарь', command=mycal)
 file.add_separator()
 file.add_command(label='Quit File', command=Quit)
 
