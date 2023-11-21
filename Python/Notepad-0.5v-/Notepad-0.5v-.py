@@ -225,7 +225,7 @@ def newPomaq():
 # Информация
 
 # Часы
-def myteme():
+def myTeme():
 
     tqme = tk.Toplevel()
     tqme.title('Цифровые Часы')
@@ -261,6 +261,7 @@ my_menu.add_separator()
 my_menu.add_command(label='Quit File', command=Quit)
 
 edit = Menu(win, tearoff=0)
+edit.add_command(label='Цыфровый часы', command=myTeme)
 edit.add_command(label='Color-текст', command=colorPicer)
 edit.add_command(label='Color-фон', command=colorPicerFons)
 edit.add_command(label='Clear', command=my_clear)
