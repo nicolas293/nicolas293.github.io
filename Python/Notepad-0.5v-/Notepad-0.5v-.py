@@ -3,6 +3,7 @@ from tkinter.scrolledtext import ScrolledText
 from tkinter import filedialog as fd
 from tkinter import colorchooser as ch
 from tkinter import colorchooser
+from  time import  strftime
 from tkinter import *
 
 
@@ -222,6 +223,27 @@ def newPomaq():
 
     gut.mainloop()   
 # Информация
+
+# Часы
+def myteme():
+
+    tqme = tk.Toplevel()
+    tqme.title('Цифровые Часы')
+
+    lable = Label(time, font=('aerial', 30), background='black', foreground='white')
+
+    def time():
+        string = strftime('%H:%M:%S %p')
+        lable.config(text=string)
+        lable.after(1000, time)
+
+    lable.pack(anchor='center')
+    time()
+
+    tqme.mainloop()
+
+# Часы
+
 
 win.bind("<Button-3>", my_popup)
 
