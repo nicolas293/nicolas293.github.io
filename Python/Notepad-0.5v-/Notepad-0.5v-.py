@@ -263,7 +263,6 @@ def mycal():
     date.pack(pady = 20)
 
     cali.mainloop()
-
 # календарь
 
 
@@ -272,6 +271,9 @@ win.bind("<Button-3>", my_popup)
 my_menu = Menu(win, tearoff=0)
 my_menu.add_command(label='Open File', command=OpenFile)
 my_menu.add_command(label='Save File', command=SaveFile)
+my_menu.add_separator()
+my_menu.add_command(label='Цыфровый часы', command=myTeme)
+my_menu.add_command(label='Календарь', command=mycal)
 my_menu.add_separator()
 my_menu.add_command(label='Color-Текст', command=colorPicer)
 my_menu.add_command(label='Color-фон', command=colorPicerFons)
