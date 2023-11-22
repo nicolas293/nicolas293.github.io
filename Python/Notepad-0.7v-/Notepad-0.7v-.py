@@ -368,7 +368,7 @@ file.add_separator()
 file.add_command(label='Цыфровый часы', command=myTeme)
 file.add_command(label='Календарь', command=mycal)
 file.add_separator()
-file.add_command(label='Авто закрытие', command=windowsOpenWin)
+file.add_command(label='Auto-закрытие', command=windowsOpenWin)
 file.add_separator()
 file.add_command(label='Quit File', command=Quit)
 
