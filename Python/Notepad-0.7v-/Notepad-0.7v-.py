@@ -37,6 +37,9 @@ def my_popup(e):
 def on_click(event):
     print("Клик")
 
+def my_copy():
+    text.insert(INSERT, text.get("1.0", "end-1c"))
+
 def update_label():
     row, col = text.index('insert').split('.')
     label.config(text=f'{row}:{col}')
@@ -155,18 +158,22 @@ def my_counter():
     def counter():
         output.delete("0.0","end")
         filename = fd.askopenfilename()
+
         with open(filename) as file:
             text = file.read()
+            
         text = text.replace("\n", " ")
         text = text.replace(",", "").replace(".", "").replace("?", "").replace("!", "").replace("—", "")
         text = text.lower()
         words = text.split()
         nonrep_words = list()
+        
         for word in words:
             if word in nonrep_words:
                 pass
             else:
                 nonrep_words.append(word)
+        
         output.insert("end","Amount of words: %d\n" % len(words))
         output.insert("end","Amount of nonrepeatable words: %d\n" % len(nonrep_words))
 
@@ -334,6 +341,8 @@ win.bind("<Button-3>", my_popup)
 my_menu = Menu(win, tearoff=0)
 my_menu.add_command(label='Open File', command=OpenFile)
 my_menu.add_command(label='Save File', command=SaveFile)
+my_menu.add_separator()
+my_menu.add_command(label='copy-text', command=my_copy)
 my_menu.add_separator()
 my_menu.add_command(label='Цыфровый часы', command=myTeme)
 my_menu.add_command(label='Календарь', command=mycal)
