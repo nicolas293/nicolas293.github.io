@@ -5,7 +5,7 @@ from tkinter import colorchooser as ch
 from tkinter import colorchooser
 from time import  strftime
 from tkcalendar import Calendar
-from PIL import Image, ImageTk
+import threading
 import time
 from tkinter import *
 
@@ -13,7 +13,6 @@ from tkinter import *
 win = Tk()
 win.geometry('560x450')
 win.title('Notepad_0.7v')
-win.withdraw()
 
 def OpenFile():
     fd.askopenfilename()
@@ -42,30 +41,6 @@ def update_label():
     row, col = text.index('insert').split('.')
     label.config(text=f'{row}:{col}')
     win.after(100, update_label)
-
-def centerWindow(width, height, win):  
-    screen_width = win.winfo_screenwidth()  
-    screen_height = win.winfo_screenheight()      
-    x = (screen_width/2) - (width/2)
-    y = (screen_height/2) - (height/2)
-    return int(x), int(y)
-
-splash_screen = tk.Toplevel(background="white")
-splash_screen.overrideredirect(True)
-splash_screen.title("Splash Screen")
-x, y = centerWindow(400, 300, win)
-splash_screen.geometry(f"400x300+{x}+{y}")
-
-image = tk.PhotoImage(file="./icons/notebookbook.png") 
-labelu = tk.Label(splash_screen, image=image)
-labelu.pack()
-
-splash_screen.update()
-
-time.sleep(3)
-
-win.deiconify()
-splash_screen.destroy()
 
 def Quit():
     quit()
