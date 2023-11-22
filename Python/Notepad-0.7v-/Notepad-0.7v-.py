@@ -283,9 +283,10 @@ def myStytsColor():
     reg = tk.Tk()
     reg.geometry("250x200")
     reg.title("Выбор цвета")
-
+   
     def choose_color():
-        color = ch.askcolor()[1]  
+        color = ch.askcolor()[1]
+        text.insert(INSERT, color, text.get("1.0", "end-1c"))
         color_label.config(text=f"Вы выбрали цвет {color}")  
         second_label.config(bg=color)  
 
@@ -295,6 +296,8 @@ def myStytsColor():
     color_button.pack(pady=10)
     color_label.pack()
     second_label.pack(pady=10)
+
+    reg.mainloop()
 # выбор цвета
 
 # Авто закрытие окна
