@@ -275,10 +275,25 @@ def mycal():
     cali.mainloop()
 # календарь
 
-# статусбар
-# def myStatys():
+# выбор цвета
+def myStytsColor():
 
-# статусбар
+    reg = tk.Tk()
+    reg.geometry("250x200")
+    reg.title("Выбор цвета")
+
+    def choose_color():
+        color = ch.askcolor()[1]  
+        color_label.config(text=f"Вы выбрали цвет {color}")  
+        second_label.config(bg=color)  
+
+    color_button = tk.Button(reg, text="Выбрать цвет", command=choose_color)
+    color_label = tk.Label(reg, text="Нажмите кнопку, чтобы выбрать цвет")
+    second_label = tk.Label(reg, text="\t\t\t\n\t\t\t")
+    color_button.pack(pady=10)
+    color_label.pack()
+    second_label.pack(pady=10)
+# выбор цвета
 
 win.bind("<Button-3>", my_popup)
 
@@ -288,6 +303,8 @@ my_menu.add_command(label='Save File', command=SaveFile)
 my_menu.add_separator()
 my_menu.add_command(label='Цыфровый часы', command=myTeme)
 my_menu.add_command(label='Календарь', command=mycal)
+my_menu.add_separator()
+my_menu.add_command(label='Выбор Цвета', command=myStytsColor)
 my_menu.add_separator()
 my_menu.add_command(label='Color-Текст', command=colorPicer)
 my_menu.add_command(label='Color-фон', command=colorPicerFons)
