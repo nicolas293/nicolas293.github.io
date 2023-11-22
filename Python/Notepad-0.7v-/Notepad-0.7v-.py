@@ -5,12 +5,15 @@ from tkinter import colorchooser as ch
 from tkinter import colorchooser
 from time import  strftime
 from tkcalendar import Calendar
+from PIL import Image, ImageTk
+import time
 from tkinter import *
 
 
 win = Tk()
 win.geometry('560x450')
 win.title('Notepad_0.7v')
+win.withdraw()
 
 def OpenFile():
     fd.askopenfilename()
@@ -39,6 +42,30 @@ def update_label():
     row, col = text.index('insert').split('.')
     label.config(text=f'{row}:{col}')
     win.after(100, update_label)
+
+def centerWindow(width, height, win):  
+    screen_width = win.winfo_screenwidth()  
+    screen_height = win.winfo_screenheight()      
+    x = (screen_width/2) - (width/2)
+    y = (screen_height/2) - (height/2)
+    return int(x), int(y)
+
+splash_screen = tk.Toplevel(background="white")
+splash_screen.overrideredirect(True)
+splash_screen.title("Splash Screen")
+x, y = centerWindow(400, 300, win)
+splash_screen.geometry(f"400x300+{x}+{y}")
+
+image = tk.PhotoImage(file="./icons/notebookbook.png") 
+labelu = tk.Label(splash_screen, image=image)
+labelu.pack()
+
+splash_screen.update()
+
+time.sleep(3)
+
+win.deiconify()
+splash_screen.destroy()
 
 def Quit():
     quit()
@@ -295,6 +322,35 @@ def myStytsColor():
     second_label.pack(pady=10)
 # выбор цвета
 
+# Авто закрытие окна
+def windowsOpenWin():
+
+    def func():
+        print('Now I can run something else')
+        win.destroy()
+
+    def update_label():
+        global counter
+
+        counter -= 1
+        
+        lbl['text'] = f'COUNTDOWN: {counter} s'
+        
+        if counter > 0:
+            win.after(1000, update_label)
+
+    counter = 7 
+
+    lbl = tk.Label(win, text=f'COUNTDOWN: {counter} s')
+    lbl.pack(padx=50, pady=50)
+
+    win.after(7000, func)
+
+    win.after(1000, update_label)
+# Авто закрытие окна
+
+
+
 win.bind("<Button-3>", my_popup)
 
 my_menu = Menu(win, tearoff=0)
@@ -336,6 +392,8 @@ file.add_command(label='Выбор Цвета', command=myStytsColor)
 file.add_separator()
 file.add_command(label='Цыфровый часы', command=myTeme)
 file.add_command(label='Календарь', command=mycal)
+file.add_separator()
+file.add_command(label='Авто закрытие', command=windowsOpenWin)
 file.add_separator()
 file.add_command(label='Quit File', command=Quit)
 
