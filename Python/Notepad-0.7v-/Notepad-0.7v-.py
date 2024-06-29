@@ -334,8 +334,6 @@ def windowsOpenWin():
     win.after(1000, update_label)
 # Авто закрытие окна
 
-
-
 win.bind("<Button-3>", my_popup)
 
 my_menu = Menu(win, tearoff=0)
