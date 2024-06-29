@@ -137,10 +137,10 @@ root.wm_attributes('-alpha', 0.9)
 root.config(bg="white")
 
 text = ScrolledText(root, insertbackground="black", fg="black", bg="white", undo=True)
-text.bind('<Any-KeyPress>', updateLineNumber)
+text.bind('<Any-KeyPress>')
 text.pack(expand = True, fill = BOTH)
 
-text.bind('<<Modified>>', on_edit)
+text.bind('<<Modified>>')
 
 text.tag_config("keyword", foreground='blue')
 text.tag_config("string_literal", foreground='red')
